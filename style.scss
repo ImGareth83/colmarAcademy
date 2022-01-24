@@ -210,6 +210,10 @@ nav{
       
     }
 
+    &:hover{
+      background-color: $light-grey;
+    }
+
   }
 }
 
@@ -290,16 +294,13 @@ nav{
     .thesis-section-right-container { 
       grid-area: 1 / 2 / 2 / 3; 
       padding: 16px 0 16px 16px;
-      // outline: solid;
-      background-color: $light-grey;
-
 
       img{
         height: auto;
         margin: 0 16px 16px 0;
       }
 
-      div{
+      div{  
         display: flex;
         margin-bottom: 16px;
 
@@ -312,6 +313,10 @@ nav{
           h5{
             margin-bottom: 16px;
           }
+        }
+
+        &:hover{
+          background-color: $light-grey;
         }
       }
     }
@@ -364,12 +369,6 @@ footer{
 
 
 }
-
-
-
-
-
-
 
 
 /* media queries */

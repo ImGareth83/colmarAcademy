@@ -221,6 +221,10 @@ nav a:hover {
   text-decoration: none;
 }
 
+.mid-right-container div:hover {
+  background-color: #d8d8d8;
+}
+
 .learning-section-container {
   padding: 32px 72px 32px 72px;
   background-color: #d8d8d8;
@@ -355,7 +359,6 @@ nav a:hover {
   -ms-grid-column-span: 1;
   grid-area: 1 / 2 / 2 / 3;
   padding: 16px 0 16px 16px;
-  background-color: #d8d8d8;
 }
 
 .thesis-section-container .thesis-exhibit-grid-parent .thesis-section-right-container img {
@@ -388,6 +391,10 @@ nav a:hover {
 
 .thesis-section-container .thesis-exhibit-grid-parent .thesis-section-right-container div div h5 {
   margin-bottom: 16px;
+}
+
+.thesis-section-container .thesis-exhibit-grid-parent .thesis-section-right-container div:hover {
+  background-color: #d8d8d8;
 }
 
 footer {
