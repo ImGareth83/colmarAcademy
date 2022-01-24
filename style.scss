@@ -1,0 +1,148 @@
+/* reset */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,h1,h2,h3,h4,p,li,figure,figcaption,blockquote,dl,dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html{
+
+  /* Sets up the Base 10 */
+  font-size: 62.5%;
+
+}
+
+/* _typography */
+@font-face {
+  font-family: "Open Sans",sans-serif;
+  font-weight: 400;
+  src: url("https://fonts.googleapis.com/css?family=Open+Sans");
+}
+
+/* font colors */
+$font-primary-grey:#515151;
+$font-primary-grey-lighter: #8A97A8;
+$font-primary-grey-darker: #01161E;
+
+/* breakpoints */
+$breakpoint-mobile:720px;
+
+/* elements */
+h1{
+  font-size: 3rem;
+  font-family: "Open Sans";
+}
+
+h2{
+  font-size: 2.8rem;
+  font-family: "Open Sans";
+}
+
+h3{
+  font-size: 2.6rem;
+  font-family: "Open Sans";
+}
+
+h4{
+  font-size: 2.4rem;
+  font-family: "Open Sans";
+}
+
+h5{
+  font-size: 2.2rem;
+  font-family: "Open Sans";
+}
+
+body{
+  font-size: 1.6rem;
+  font-family: "Open Sans";
+}
+
+.navbar-container{
+  padding-top: 10px;
+  width: 90%;
+  min-height: 64px;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+
+.logo-container{
+  float: left;
+  min-height: 32px;
+  
+  .logo-name{
+    padding: 10px 0 0 20px;
+    color: $font-primary-grey-lighter;
+    font-size: 1.6rem;
+    text-transform: uppercase; 
+    white-space: nowrap;
+    
+    strong{
+      color: $font-primary-grey-darker;
+    }
+   }
+}
+
+.logo{
+  float: left;
+  padding: 1rem 0;
+}
+
+nav{
+  float: right;
+
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li{
+    display: inline-block;
+    margin-left: 7rem;
+    padding-top: 2.5rem;
+    margin: 0 8px 0 8px;
+  }
+
+  a{
+    color: $font-primary-grey;
+    text-decoration: none;
+    
+
+    &:hover{
+      color: $font-primary-grey-lighter;
+    }
+
+  }
+}
+
+/* media queries */
+@media only screen and (max-width: $breakpoint-mobile) {
+
+  h1{
+    font-size: 2.6rem;
+  }
+
+  h2{
+    font-size: 2.4rem;
+  }
+
+  h3{
+    font-size: 2.2rem;
+  }
+
+  h4{
+    font-size: 2rem;
+  }
+
+  h5{
+    font-size: 1.8rem;
+  }
+
+}

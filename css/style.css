@@ -1,0 +1,134 @@
+/* reset */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default margin */
+body, h1, h2, h3, h4, p, li, figure, figcaption, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  /* Sets up the Base 10 */
+  font-size: 62.5%;
+}
+
+/* _typography */
+@font-face {
+  font-family: "Open Sans",sans-serif;
+  font-weight: 400;
+  src: url("https://fonts.googleapis.com/css?family=Open+Sans");
+}
+
+/* font colors */
+/* breakpoints */
+/* elements */
+h1 {
+  font-size: 3rem;
+  font-family: "Open Sans";
+}
+
+h2 {
+  font-size: 2.8rem;
+  font-family: "Open Sans";
+}
+
+h3 {
+  font-size: 2.6rem;
+  font-family: "Open Sans";
+}
+
+h4 {
+  font-size: 2.4rem;
+  font-family: "Open Sans";
+}
+
+h5 {
+  font-size: 2.2rem;
+  font-family: "Open Sans";
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans";
+}
+
+.navbar-container {
+  padding-top: 10px;
+  width: 90%;
+  min-height: 64px;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+
+.logo-container {
+  float: left;
+  min-height: 32px;
+}
+
+.logo-container .logo-name {
+  padding: 10px 0 0 20px;
+  color: #8A97A8;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.logo-container .logo-name strong {
+  color: #01161E;
+}
+
+.logo {
+  float: left;
+  padding: 1rem 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 7rem;
+  padding-top: 2.5rem;
+  margin: 0 8px 0 8px;
+}
+
+nav a {
+  color: #515151;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #8A97A8;
+}
+
+/* media queries */
+@media only screen and (max-width: 720px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+  h3 {
+    font-size: 2.2rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1.8rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
