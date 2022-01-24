@@ -320,6 +320,53 @@ nav{
   }
 }
 
+footer{
+  // background-color: skyblue;
+  height: auto;
+  font-family: "Open Sans";
+  padding: 16px 10px 24px 24px;
+  min-height: 10rem;
+}
+
+.footer-content{
+  text-align: center;
+
+
+  h6{
+    float: left;
+  }
+
+  .footer-links{
+    float: right;
+
+    ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    
+      li{
+        display: inline-block;
+        margin: 0 8px 0 8px;
+      }
+    
+      a{
+        color: $font-primary-grey;
+        text-decoration: none;
+        
+        &:hover{
+          color: $font-primary-grey-lighter;
+        }
+    
+      }
+    }
+  }
+
+
+
+}
+
+
+
 
 
 

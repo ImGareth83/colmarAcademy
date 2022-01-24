@@ -390,6 +390,45 @@ nav a:hover {
   margin-bottom: 16px;
 }
 
+footer {
+  height: auto;
+  font-family: "Open Sans";
+  padding: 16px 10px 24px 24px;
+  min-height: 10rem;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content h6 {
+  float: left;
+}
+
+.footer-content .footer-links {
+  float: right;
+}
+
+.footer-content .footer-links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-content .footer-links ul li {
+  display: inline-block;
+  margin: 0 8px 0 8px;
+}
+
+.footer-content .footer-links ul a {
+  color: #515151;
+  text-decoration: none;
+}
+
+.footer-content .footer-links ul a:hover {
+  color: #8A97A8;
+}
+
 /* media queries */
 @media only screen and (max-width: 720px) {
   h1 {
