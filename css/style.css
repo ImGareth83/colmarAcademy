@@ -53,60 +53,50 @@ body {
   color: #515151;
 }
 
-.navbar-container {
-  padding: 10px 24px 24px 0;
-  width: 90%;
-  min-height: 64px;
-  margin: 0 auto;
-  font-size: 1.6rem;
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 18px 24px 18px 24px;
 }
 
-.logo-container {
-  float: left;
-  min-height: 32px;
+header .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.logo-container .logo-name {
-  padding: 10px 0 0 20px;
-  color: #8A97A8;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  white-space: nowrap;
+header .logo-container img {
+  cursor: pointer;
 }
 
-.logo-container .logo-name strong {
-  color: #01161E;
-}
-
-.logo {
-  float: left;
-  padding: 1rem 0;
-}
-
-nav {
-  float: right;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
+header ul {
   list-style: none;
 }
 
-nav li {
+header ul li {
   display: inline-block;
-  margin-left: 7rem;
-  padding-top: 2.5rem;
-  margin: 0 8px 0 8px;
+  padding: 0 8px 0 8px;
 }
 
-nav a {
+header ul li a {
   color: #515151;
   text-decoration: none;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
-nav a:hover {
-  color: #8A97A8;
+header ul li a:hover {
+  background-color: #d8d8d8;
 }
 
 .banner-container {

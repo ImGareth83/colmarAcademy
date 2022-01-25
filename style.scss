@@ -64,63 +64,40 @@ body{
   color: $font-primary-grey;
 }
 
-.navbar-container{
-  // padding-top: 10px;
-  padding: 10px 24px 24px 0;
-  width: 90%;
-  min-height: 64px;
-  margin: 0 auto;
-  font-size: 1.6rem;
-}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px 18px 24px;
 
-.logo-container{
-  float: left;
-  min-height: 32px;
-  
-  .logo-name{
-    padding: 10px 0 0 20px;
-    color: $font-primary-grey-lighter;
-    font-size: 1.6rem;
-    text-transform: uppercase; 
-    white-space: nowrap;
-    
-    strong{
-      color: $font-primary-grey-darker;
+  .logo-container{
+    display: flex;
+    align-items: center;
+
+    img{
+      cursor: pointer;
     }
-   }
-}
-
-.logo{
-  float: left;
-  padding: 1rem 0;
-}
-
-nav{
-  float: right;
+  }
 
   ul{
-    margin: 0;
-    padding: 0;
     list-style: none;
-  }
 
-  li{
-    display: inline-block;
-    margin-left: 7rem;
-    padding-top: 2.5rem;
-    margin: 0 8px 0 8px;
-  }
+    li{
+      display: inline-block;
+      padding: 0 8px 0 8px;
 
-  a{
-    color: $font-primary-grey;
-    text-decoration: none;
-    
+      a{
+        color: $font-primary-grey;
+        text-decoration: none;
+        transition: all 0.3s ease 0s;
 
-    &:hover{
-      color: $font-primary-grey-lighter;
+        &:hover{
+          background-color: $light-grey;
+        }
+      }
     }
-
   }
+
 }
 
 .banner-container{
