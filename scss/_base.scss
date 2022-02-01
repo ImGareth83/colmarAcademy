@@ -1,0 +1,33 @@
+@use 'root';
+
+/* Set core root defaults */
+html {
+  /* Sets up the Base 10 */
+  font-size: 62.5%;
+}
+
+/* _typography */
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://fonts.googleapis.com/css?family=Open+Sans");
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 15rem;
+  color: root.$font-primary-grey;
+}
+
+/* h1,h2,h3,h4,h5,h6 */
+$starting-font-size:3rem;
+@for $i from 1 to 6 {
+    $starting-font-size: $starting-font-size - root.$base-font-size;
+
+    h#{$i}{
+        // @debug "font-size #{$starting-font-size}";
+        font-size: $starting-font-size;
+        font-weight: normal;
+    }
+}

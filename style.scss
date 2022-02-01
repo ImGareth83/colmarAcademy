@@ -1,68 +1,7 @@
-/* reset */
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,h1,h2,h3,h4,p,li,figure,figcaption,blockquote,dl,dd {
-  margin: 0;
-}
-
-/* Set core root defaults */
-html{
-
-  /* Sets up the Base 10 */
-  font-size: 62.5%;
-  font-family: "Open Sans";
-
-}
-
-/* _typography */
-@font-face {
-  font-family: "Open Sans",sans-serif;
-  font-weight: 400;
-  src: url("https://fonts.googleapis.com/css?family=Open+Sans");
-}
-
-/* font colors */
-$font-primary-grey:#515151;
-$font-primary-grey-lighter: #8A97A8;
-$font-primary-grey-darker: #01161E;
-
-$light-grey:#d8d8d8;
-$slight-grey:#9d9d9d;
-$dark-grey:#808080;
+@use 'scss' as *;
 
 /* breakpoints */
-$breakpoint-mobile:720px;
-
-/* elements */
-h1{
-  font-size: 3rem;
-}
-
-h2{
-  font-size: 2.8rem;
-}
-
-h3{
-  font-size: 2.6rem;
-}
-
-h4{
-  font-size: 2.4rem;
-}
-
-h5{
-  font-size: 2.2rem;
-}
-
-body{
-  font-size: 1.6rem;
-  color: $font-primary-grey;
-}
+$breakpoint-mobile:720px; 
 
 header{
   display: flex;
