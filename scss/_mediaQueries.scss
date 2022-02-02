@@ -1,0 +1,26 @@
+//https://jdsteinbach.com/css/sass-maps-breakpoint-mixin/
+$breakpoints: (
+  very-small: 320px,
+  small: 480px,
+  medium: 720px,
+  large: 960px,
+  wide: 1200px,
+);
+
+//https://clubmate.fi/the-modern-way-of-writing-media-queries-with-the-help-of-sass
+//https://css-tricks.com/snippets/sass/px-to-em-functions/
+// Em conversion
+@function calculateEm($size) {
+  $emSize: calc($size / 16px) * 1em;
+  @return $emSize;
+}
+
+@mixin breakpoint($size) {
+  @if not map-has-key($breakpoints, $size) {
+    @warn "Warning: `#{$size}` is not a valid breakpoint size.";
+  } @else {
+    @media screen and (min-width: calculateEm(map-get($breakpoints, $size))) {
+      @content;
+    }
+  }
+}
