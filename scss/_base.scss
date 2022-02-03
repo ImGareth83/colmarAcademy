@@ -37,3 +37,9 @@ $starting-font-size:2.8rem;
     $starting-font-size: $starting-font-size - root.$base-font-size;
 
 }
+
+@include mediaQueries.breakpoint(medium){
+  .learning-plain{
+    display: none;
+  }
+}
