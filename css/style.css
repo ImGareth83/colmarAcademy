@@ -93,27 +93,27 @@ body {
 
 /* h1,h2,h3,h4,h5,h6 */
 h1 {
-  font-size: 3rem;
-  font-weight: normal;
-}
-
-h2 {
   font-size: 2.8rem;
   font-weight: normal;
 }
 
-h3 {
+h2 {
   font-size: 2.6rem;
   font-weight: normal;
 }
 
-h4 {
+h3 {
   font-size: 2.4rem;
   font-weight: normal;
 }
 
-h5 {
+h4 {
   font-size: 2.2rem;
+  font-weight: normal;
+}
+
+h5 {
+  font-size: 2rem;
   font-weight: normal;
 }
 
@@ -169,6 +169,43 @@ header .header__navlink ul li a:hover {
 }
 @media screen and (min-width: 45em) {
   header .header__navlink {
+    display: block;
+    min-width: fit-content;
+  }
+}
+
+footer {
+  margin-top: 24px;
+}
+footer .footer__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0 16px 0;
+  width: 100%;
+}
+@media screen and (min-width: 45em) {
+  footer .footer__content {
+    justify-content: space-between;
+  }
+}
+footer .footer__content__links {
+  display: none;
+}
+footer .footer__content__links ul {
+  list-style: none;
+}
+footer .footer__content__links ul li {
+  display: inline-block;
+  padding: 0 8px 0 8px;
+}
+footer .footer__content__links ul li a {
+  color: #515151;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+@media screen and (min-width: 45em) {
+  footer .footer__content__links {
     display: block;
     min-width: fit-content;
   }
@@ -385,26 +422,6 @@ footer {
 
 /* media queries */
 @media screen and (max-width: 720px) {
-  h1 {
-    font-size: 2.6rem;
-  }
-
-  h2 {
-    font-size: 2.4rem;
-  }
-
-  h3 {
-    font-size: 2.2rem;
-  }
-
-  h4 {
-    font-size: 2rem;
-  }
-
-  h5 {
-    font-size: 1.8rem;
-  }
-
   .banner-container {
     flex-direction: column;
     align-items: center;
@@ -469,13 +486,6 @@ footer {
   }
   .thesis-exhibit-grid-parent .thesis-section-left-container {
     grid: area 0;
-  }
-
-  footer {
-    margin-top: 24px;
-  }
-  footer .footer-content {
-    padding: 16px 0 16px 0;
   }
 }
 

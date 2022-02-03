@@ -1,0 +1,41 @@
+@use "root";
+@use "mediaQueries";
+
+footer {
+  margin-top: 24px;
+
+  .footer__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0 16px 0;
+    width: 100%;
+
+    @include mediaQueries.breakpoint(medium) {
+      justify-content: space-between;
+    }
+  }
+
+  .footer__content__links {
+    display: none;
+    ul {
+      list-style: none;
+
+      li {
+        display: inline-block;
+        padding: 0 8px 0 8px;
+
+        a {
+          color: root.$font-primary-grey;
+          text-decoration: none;
+          transition: all 0.3s ease 0s;
+        }
+      }
+    }
+
+    @include mediaQueries.breakpoint(medium) {
+      display: block;
+      min-width: fit-content;
+    }
+  }
+}
