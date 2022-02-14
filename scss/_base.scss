@@ -20,6 +20,13 @@ body {
   color: root.$font-primary-grey;
 }
 
+//https://www.youtube.com/watch?v=wARbgs5Fmuw
+//to set responsive font size
+//1) set up global font  sizes in rems
+//2) use clamp(min, growth rate, max) only for h1 
+//3) setup media queries
+
+
 /* h1,h2,h3,h4,h5,h6 */
 $starting-font-size:2.8rem;
 
